@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
-import {featured} from '../data/products.json'
+import {featured} from '../data/products.json';
 
 
 function Featured({image,name,price,index}){
     const [ cart, setCart ] = useState([]);
 
     useEffect(() => {
-        localStorage.setItem('@cart',JSON.stringify(cart,null,2))
+        localStorage.setItem('@cart',JSON.stringify(cart,null,2));
     },[cart]);
 
     const handleCart = ( event,index ) => {
