@@ -1,0 +1,74 @@
+{
+    "featured": [
+        {
+            "id": 1,
+            "name": "Nike Jordan",
+            "image": "/assets/featured1.png",
+            "price": 449.99
+        },
+        {
+            "id": 2,
+            "name": "Nike Free RN",
+            "image": "/assets/featured2.png",
+            "price": 449.99
+        },
+        {
+            "id": 3,
+            "name": "Nike Free RN",
+            "image": "/assets/featured3.png",
+            "price": 449.99
+        }
+    ],
+    "women": [
+        {
+            "id": 4,
+            "name": "Nike Free TR",
+            "image": "/assets/women1.png",
+            "price": 329.99
+        },
+        {
+            "id": 5,
+            "name": "Nike Free TR",
+            "image": "/assets/women2.png",
+            "price": 329.99
+        },
+        {
+            "id": 6,
+            "name": "Nike GS Pink",
+            "image": "/assets/women3.png",
+            "price": 329.99
+        },
+        {
+            "id": 7,
+            "name": "Nike GET 5",
+            "image": "/assets/women4.png",
+            "price": 329.99
+        }
+    ],
+    "newCollection": [
+        {
+            "id": 8,
+            "name": "Sply 350",
+            "image": "/assets/new2.png",
+            "price": 179.99
+        },
+        {
+            "id": 9,
+            "name": "Sply 350",
+            "image": "/assets/new3.png",
+            "price": 179.99
+        },
+        {
+            "id": 10,
+            "name": "Sply 350",
+            "image": "/assets/new4.png",
+            "price": 179.99
+        },
+        {
+            "id": 11,
+            "name": "Sply 350",
+            "image": "/assets/new5.png",
+            "price": 179.99
+        }
+    ]
+}
