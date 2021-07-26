@@ -1,4 +1,4 @@
-# 🚀 DESAFIO 2-VTEXT & GAMA ACADEMY
+# 🚀 DESAFIO 2-VTEX & GAMA ACADEMY
 
 <p align="center">
     <img src="/public/sample/sample_video.gif"/>
