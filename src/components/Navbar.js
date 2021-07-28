@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 
 import { Link, animateScroll as scroll } from "react-scroll";
+import { CartContext } from "../Providers/CartContext";
 
 function Navbar() {
     const [toggleNav, setToggleNav] = useState(false);
+    const {cart} = React.useContext(CartContext);
 
     
     const handleToggleNav = () => setToggleNav(!toggleNav);
@@ -11,6 +13,15 @@ function Navbar() {
     const handleRemoveNav = (e) => {
         e.preventDefault();
         setToggleNav(false);
+    }
+
+    let bagShop = {};
+    
+    if(cart.length > 0){
+        bagShop.items = <span className="items_cart">{cart.length}</span>;
+        bagShop.bag = <i className='bx bx-shopping-bag bx-tada' ></i>;
+    } else {
+        bagShop.bag = <i className='bx bx-shopping-bag' ></i>;
     }
 
     return (
@@ -102,8 +113,9 @@ function Navbar() {
 
             </div> {/*nav__menu*/}
 
-            <div className="nav__shop">
-                <i className='bx bx-shopping-bag bx-tada' ></i>
+            <div className="nav__shop" title={`${cart.length} items no carrinho.`}>
+                {bagShop.items}
+                {bagShop.bag}
             </div>
 
         </nav>

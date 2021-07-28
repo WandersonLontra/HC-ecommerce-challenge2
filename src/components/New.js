@@ -1,12 +1,10 @@
-import { useEffect, useState } from 'react';
+import React from 'react';
 import {newCollection} from '../data/products.json'
+import { CartContext } from '../Providers/CartContext';
 
 function New({image, index}){
-    const [ cart, setCart ] = useState([]);
+    const {setCart} = React.useContext(CartContext);
 
-    useEffect(() => {
-        localStorage.setItem('@cart',JSON.stringify(cart,null,2))
-    },[cart]);
 
     const handleCart = ( event,index ) => {
         event.preventDefault();

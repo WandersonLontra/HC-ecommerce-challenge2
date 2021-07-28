@@ -128,6 +128,26 @@ export const Container = styled.div`
         cursor: pointer;
     }
 
+    .nav__shop{
+        position: relative;
+    }
+
+    .nav__shop > span.items_cart{
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: rgb(228, 74, 74);
+        font-size: .75rem;
+        position: absolute;
+        right: -7px;
+        top: -7px;
+        color: ${root.white_color};
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
     /*SHOW MENU*/
     .show{
         left: 0
